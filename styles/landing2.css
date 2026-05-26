@@ -1,0 +1,512 @@
+/* =========================================================================
+ * MIMIC — Landing V2 themes (mix · light · dark)
+ * ========================================================================= */
+
+.landing2-page {
+  --l2-hero-bg: var(--c-ink);
+  --l2-hero-title: var(--c-white);
+  --l2-hero-sub: var(--c-muted-dark);
+  --l2-hero-grid: rgba(255, 255, 255, 0.02);
+  --l2-section-a: var(--c-paper);
+  --l2-section-b: var(--c-white);
+  --l2-section-dark: var(--c-ink);
+  --l2-heading: var(--c-ink);
+  --l2-body-muted: var(--c-slate);
+  --l2-on-dark-heading: var(--c-white);
+  --l2-on-dark-muted: var(--c-muted-dark);
+  --l2-card-bg: var(--c-white);
+  --l2-card-bg-muted: var(--c-ink-card);
+  --l2-card-border: var(--c-line);
+  --l2-card-border-dark: var(--c-line-dark);
+  --l2-footer-bg: var(--c-ink);
+  --l2-footer-border: var(--c-line-dark);
+  --l2-footer-text: var(--c-muted-dark);
+  --l2-nav-link: var(--c-muted-dark);
+  --l2-nav-login: var(--c-white);
+  --l2-nav-bg-scrolled: rgba(16, 24, 20, 0.92);
+  --l2-nav-border-scrolled: rgba(255, 255, 255, 0.06);
+  --l2-metrics-overlap: 32%;
+  --l2-hero-metrics-space: 140px;
+  --l2-social-clearance: 160px;
+  --l2-metrics-shadow:
+    0 32px 80px rgba(16, 24, 20, 0.14),
+    0 12px 28px rgba(16, 24, 20, 0.08),
+    0 2px 6px rgba(16, 24, 20, 0.04);
+  --l2-faq-closed-bg: var(--c-paper);
+  --l2-faq-open-bg: var(--c-white);
+  --l2-for-whom-no-bg: var(--c-white);
+  --l2-comparison-sin-bg: var(--c-ink-card);
+  --l2-comparison-con-bg: linear-gradient(180deg, rgba(16, 190, 134, 0.12) 0%, var(--c-ink-card) 100%);
+  --l2-comparison-row-border: var(--c-line-dark);
+  --l2-comparison-con-row-border: rgba(16, 190, 134, 0.15);
+  --l2-pricing-panel-bg: var(--c-white);
+  --l2-pricing-side-bg: linear-gradient(180deg, var(--c-paper) 0%, var(--c-white) 100%);
+}
+
+.landing2-theme-light {
+  --l2-hero-bg: var(--c-paper);
+  --l2-hero-title: var(--c-ink);
+  --l2-hero-sub: var(--c-slate);
+  --l2-hero-grid: rgba(16, 24, 20, 0.04);
+  --l2-section-a: var(--c-white);
+  --l2-section-b: var(--c-paper);
+  --l2-section-dark: var(--c-white);
+  --l2-heading: var(--c-ink);
+  --l2-body-muted: var(--c-slate);
+  --l2-on-dark-heading: var(--c-ink);
+  --l2-on-dark-muted: var(--c-slate);
+  --l2-card-bg: var(--c-white);
+  --l2-card-bg-muted: var(--c-paper);
+  --l2-card-border: var(--c-line);
+  --l2-card-border-dark: var(--c-line);
+  --l2-footer-bg: var(--c-white);
+  --l2-footer-border: var(--c-line);
+  --l2-footer-text: var(--c-slate);
+  --l2-nav-link: var(--c-slate);
+  --l2-nav-login: var(--c-ink);
+  --l2-nav-bg-scrolled: rgba(255, 255, 255, 0.92);
+  --l2-nav-border-scrolled: var(--c-line);
+  --l2-metrics-shadow:
+    0 28px 64px rgba(16, 24, 20, 0.1),
+    0 10px 24px rgba(16, 24, 20, 0.06);
+  --l2-faq-closed-bg: var(--c-paper);
+  --l2-faq-open-bg: var(--c-white);
+  --l2-for-whom-no-bg: var(--c-paper);
+  --l2-comparison-sin-bg: var(--c-paper);
+  --l2-comparison-con-bg: linear-gradient(180deg, rgba(16, 190, 134, 0.06) 0%, var(--c-white) 100%);
+  --l2-comparison-row-border: var(--c-line);
+  --l2-comparison-con-row-border: rgba(16, 190, 134, 0.18);
+  --l2-pricing-panel-bg: var(--c-white);
+  --l2-pricing-side-bg: linear-gradient(180deg, var(--c-paper) 0%, var(--c-white) 100%);
+}
+
+.landing2-theme-dark {
+  --l2-hero-bg: var(--c-ink);
+  --l2-hero-title: var(--c-white);
+  --l2-hero-sub: var(--c-muted-dark);
+  --l2-hero-grid: rgba(255, 255, 255, 0.02);
+  --l2-section-a: var(--c-ink-card);
+  --l2-section-b: var(--c-ink);
+  --l2-section-dark: var(--c-ink);
+  --l2-heading: var(--c-white);
+  --l2-body-muted: var(--c-muted-dark);
+  --l2-on-dark-heading: var(--c-white);
+  --l2-on-dark-muted: var(--c-muted-dark);
+  --l2-card-bg: var(--c-ink-card);
+  --l2-card-bg-muted: var(--c-ink-card);
+  --l2-card-border: var(--c-line-dark);
+  --l2-card-border-dark: var(--c-line-dark);
+  --l2-footer-bg: var(--c-ink);
+  --l2-footer-border: var(--c-line-dark);
+  --l2-footer-text: var(--c-muted-dark);
+  --l2-nav-link: var(--c-muted-dark);
+  --l2-nav-login: var(--c-white);
+  --l2-nav-bg-scrolled: rgba(16, 24, 20, 0.92);
+  --l2-nav-border-scrolled: rgba(255, 255, 255, 0.06);
+  --l2-metrics-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  --l2-faq-closed-bg: var(--c-ink-card);
+  --l2-faq-open-bg: var(--c-ink-card);
+  --l2-for-whom-no-bg: var(--c-ink-card);
+  --l2-comparison-sin-bg: var(--c-ink-card);
+  --l2-comparison-con-bg: linear-gradient(180deg, rgba(16, 190, 134, 0.12) 0%, var(--c-ink-card) 100%);
+  --l2-comparison-row-border: var(--c-line-dark);
+  --l2-comparison-con-row-border: rgba(16, 190, 134, 0.15);
+  --l2-pricing-panel-bg: var(--c-ink-card);
+  --l2-pricing-side-bg: linear-gradient(180deg, var(--c-ink) 0%, var(--c-ink-card) 100%);
+}
+
+.landing2-theme-light {
+  background: var(--c-paper);
+  color: var(--c-ink);
+}
+
+.landing2-theme-dark {
+  background: var(--c-ink);
+  color: var(--c-white);
+}
+
+/* Theme toggle in nav */
+.landing2-theme-toggle {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  margin-right: 4px;
+}
+.landing2-theme-light .landing2-theme-toggle {
+  background: var(--c-paper);
+  border-color: var(--c-line);
+}
+.landing2-theme-toggle button {
+  border: none;
+  background: transparent;
+  color: var(--c-muted-dark);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 180ms, color 180ms;
+  white-space: nowrap;
+}
+.landing2-theme-light .landing2-theme-toggle button {
+  color: var(--c-slate);
+}
+.landing2-theme-toggle button.active {
+  background: var(--c-white);
+  color: var(--c-ink);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+.landing2-theme-light .landing2-theme-toggle button.active {
+  background: var(--c-white);
+  color: var(--c-ink);
+}
+.landing2-theme-dark .landing2-theme-toggle button.active {
+  background: var(--c-ink-card);
+  color: var(--c-white);
+  box-shadow: none;
+  border: 1px solid var(--c-line-dark);
+}
+.landing2-theme-toggle button:not(.active):hover {
+  color: var(--c-white);
+}
+.landing2-theme-light .landing2-theme-toggle button:not(.active):hover {
+  color: var(--c-ink);
+}
+
+/* Preview frame shadow per landing theme */
+.landing2-theme-light .hero-scene-frame.landing2-preview {
+  box-shadow:
+    0 32px 80px rgba(16, 24, 20, 0.14),
+    0 8px 24px rgba(16, 24, 20, 0.08),
+    0 0 0 1px var(--c-line);
+}
+
+.landing2-theme-dark .hero-scene-frame.landing2-preview {
+  box-shadow:
+    0 40px 100px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(16, 190, 134, 0.1);
+}
+
+/* Dark theme — card text overrides */
+.landing2-theme-dark .landing2-for-whom-yes {
+  background: linear-gradient(180deg, rgba(16, 190, 134, 0.08) 0%, var(--c-ink-card) 100%) !important;
+}
+.landing2-theme-dark .landing2-for-whom-yes h3,
+.landing2-theme-dark .landing2-for-whom-yes li span:last-child,
+.landing2-theme-dark .landing2-for-whom-no h3,
+.landing2-theme-dark .landing2-for-whom-no li span:last-child,
+.landing2-theme-dark .landing2-for-whom-no p strong {
+  color: var(--c-white) !important;
+}
+.landing2-theme-dark .landing2-for-whom-no p {
+  color: var(--c-muted-dark) !important;
+}
+.landing2-theme-dark .landing2-social-card p,
+.landing2-theme-dark .landing2-social-card .landing2-card-name,
+.landing2-theme-dark .landing2-how-card h3,
+.landing2-theme-dark .landing2-how-card p,
+.landing2-theme-dark .landing2-pricing-panel h3,
+.landing2-theme-dark .landing2-pricing-panel li span,
+.landing2-theme-dark .landing2-pricing-panel p,
+.landing2-theme-dark .landing2-pricing-side .landing2-price-main,
+.landing2-theme-dark .landing2-metrics-card .landing2-metric-value {
+  color: var(--c-white) !important;
+}
+.landing2-theme-dark .landing2-social-card .landing2-card-role,
+.landing2-theme-dark .landing2-how-card .landing2-step-time,
+.landing2-theme-dark .landing2-pricing-panel .landing2-price-note,
+.landing2-theme-dark .landing2-pricing-side span,
+.landing2-theme-dark .landing2-metrics-card .landing2-metric-label {
+  color: var(--c-muted-dark) !important;
+}
+.landing2-theme-dark .landing2-faq-item span.landing2-faq-q {
+  color: var(--c-white) !important;
+}
+.landing2-theme-dark .landing2-faq-item p {
+  color: var(--c-muted-dark) !important;
+}
+.landing2-theme-dark .landing2-pricing-scarcity {
+  background: var(--c-ink) !important;
+  border-color: var(--c-line-dark) !important;
+}
+.landing2-theme-dark .landing2-pricing-scarcity span {
+  color: var(--c-white) !important;
+}
+.landing2-theme-dark .landing2-pricing-scarcity p {
+  color: var(--c-muted-dark) !important;
+}
+.landing2-theme-dark .landing2-pricing-guarantee p {
+  color: var(--c-white) !important;
+}
+
+/* Hero + metrics overlap (floating trust strip) */
+.landing2-hero-block {
+  position: relative;
+}
+
+.landing2-hero {
+  padding-bottom: var(--l2-hero-metrics-space) !important;
+}
+
+.landing2-metrics {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 5;
+  margin: 0;
+  padding: 0 24px;
+  transform: translateY(calc(-1 * var(--l2-metrics-overlap)));
+  pointer-events: none;
+}
+
+.landing2-metrics-card {
+  pointer-events: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--l2-card-bg);
+  border: 1px solid var(--l2-card-border);
+  border-radius: 16px;
+  padding: 32px 28px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  box-shadow: var(--l2-metrics-shadow);
+}
+
+.landing2-page:not(.landing2-theme-light):not(.landing2-theme-dark) .landing2-metrics-card {
+  box-shadow:
+    var(--l2-metrics-shadow),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.landing2-social {
+  padding-top: var(--l2-social-clearance) !important;
+}
+
+/* FAQ accordion — grid rows avoids max-height clipping */
+.landing2-faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 320ms ease;
+}
+.landing2-faq-answer.is-open {
+  grid-template-rows: 1fr;
+}
+.landing2-faq-answer-inner {
+  min-height: 0;
+}
+.landing2-faq-answer:not(.is-open) .landing2-faq-answer-inner {
+  overflow: hidden;
+}
+.landing2-faq-answer.is-open .landing2-faq-answer-inner {
+  overflow: visible;
+}
+
+/* Testimonials — 3-col desktop, swipe carousel mobile */
+.landing2-social-card {
+  background: var(--l2-card-bg);
+  border: 1px solid var(--l2-card-border);
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.landing2-social-card-text {
+  margin: 0;
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--l2-heading);
+}
+.landing2-social-card-foot {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--l2-card-border);
+}
+.landing2-social-card-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--c-green-tint-12);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--c-green);
+  flex-shrink: 0;
+}
+.landing2-card-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--l2-heading);
+}
+.landing2-card-role {
+  font-size: 12px;
+  color: var(--l2-body-muted);
+  font-family: var(--font-body);
+}
+.landing2-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.landing2-testimonials-dots {
+  display: none;
+}
+
+/* How it works — 3-col desktop, stacked rows mobile */
+.landing2-how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* For whom — 2-col desktop, stacked mobile */
+.landing2-for-whom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* Comparison — 2-col desktop, stacked mobile */
+.landing2-comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 720px) {
+  .landing2-testimonials-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    gap: 0;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+  }
+  .landing2-testimonials-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .landing2-testimonials-grid .landing2-social-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .landing2-testimonials-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  .landing2-testimonials-dots button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 999px;
+    background: var(--l2-card-border);
+    cursor: pointer;
+    transition: background 180ms, transform 180ms;
+  }
+  .landing2-testimonials-dots button.active {
+    background: var(--c-green);
+    transform: scale(1.15);
+  }
+
+  .landing2-how-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .landing2-for-whom {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+  .landing2-for-whom-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .landing2-for-whom-yes,
+  .landing2-for-whom-no {
+    padding: 24px 20px !important;
+  }
+  .landing2-for-whom-yes h3,
+  .landing2-for-whom-no h3 {
+    font-size: 20px !important;
+  }
+  .landing2-for-whom-no-head {
+    flex-wrap: wrap;
+    gap: 10px !important;
+  }
+
+  .landing2-comparison {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+  .landing2-comparison-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .landing2-comparison-sin,
+  .landing2-comparison-con {
+    padding: 22px 18px !important;
+  }
+  .landing2-comparison-con {
+    order: -1;
+  }
+
+  .landing2-page {
+    --l2-metrics-overlap: 22%;
+    --l2-hero-metrics-space: 48px;
+    --l2-social-clearance: 88px;
+  }
+
+  .landing2-hero {
+    padding-bottom: var(--l2-hero-metrics-space) !important;
+  }
+
+  .landing2-metrics-card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 16px;
+    padding: 24px 20px;
+  }
+
+  .landing2-metrics-card > div {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+
+  .landing2-metrics-card > div:nth-child(odd) {
+    border-right: 1px solid var(--l2-card-border);
+    padding-right: 16px;
+  }
+
+  .landing2-theme-toggle {
+    display: none !important;
+  }
+
+  .landing2-hero-preview {
+    display: none !important;
+  }
+}
