@@ -21,7 +21,7 @@ const PREVIEW_ADS = [
   { id: 'p2', company: 'MedSpa Madrid', handle: '@medspamadridoficial', initials: 'MM', target: 213, isWinner: true,  tint: ['#1E3D3B', '#0E2422'] as [string, string], video: true, thumbnailUrl: '/mock-ads/ad-002.jpg' },
   { id: 'p3', company: 'Centro Láser', handle: '@laservital', initials: 'CL', target: 180, isWinner: true,  tint: ['#243E36', '#142420'] as [string, string], video: false, thumbnailUrl: '/mock-ads/ad-003.jpg' },
   { id: 'p4', company: 'Clínica Belle', handle: '@clinicabelle.es', initials: 'CB', target: 92,  isWinner: false, tint: ['#293B33', '#162420'] as [string, string], video: true, thumbnailUrl: '/mock-ads/ad-004.jpg' },
-  { id: 'p5', company: 'Renova Estética', handle: '@renovaestetica', initials: 'RE', target: 67, isWinner: false, tint: ['#2E3D33', '#192420'] as [string, string], video: true, thumbnailUrl: '/mock-ads/ad-005.jpg' },
+  { id: 'p5', company: 'Renova Estética ', handle: '@renovaestetica', initials: 'RE', target: 67, isWinner: false, tint: ['#2E3D33', '#192420'] as [string, string], video: true, thumbnailUrl: '/mock-ads/ad-005.jpg' },
 ];
 
 const PREVIEW_SCRIPT = [
