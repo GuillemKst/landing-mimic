@@ -628,10 +628,6 @@ export default function HeroPreview() {
   const showCursor = phase === 'cursor';
   const cursorClick = ['click', 'generating'].includes(phase);
 
-  const replay = useCallback(() => {
-    startLoop();
-  }, [startLoop]);
-
   return (
     <div className="hero-scene-wrap" style={{ position: 'relative', maxWidth: 1080, width: '100%', margin: '0 auto' }}>
       <PreviewSceneFrame
@@ -647,17 +643,6 @@ export default function HeroPreview() {
         loopKey={loopKey}
         reducedMotion={reducedMotion}
       />
-      {!reducedMotion && (
-        <button
-          type="button"
-          onClick={replay}
-          className="hero-replay-btn"
-          aria-label="Reiniciar animación"
-          title="Reiniciar"
-        >
-          ↻ Reiniciar
-        </button>
-      )}
     </div>
   );
 }

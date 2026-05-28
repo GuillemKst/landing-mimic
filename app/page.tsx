@@ -284,26 +284,6 @@ function ForWhomBlock() {
     <section ref={ref} className="v3-section v3-forwhom">
       <div className="v3-container">
         <div className={`v3-forwhom-grid v3-reveal ${visible ? 'visible' : ''}`}>
-          {/* YES */}
-          <div className="v3-forwhom-yes">
-            <div className="v3-eyebrow">
-              <Sq /> ESTO ES PARA TI SI...
-            </div>
-            <h3 className="v3-forwhom-title">
-              Produces anuncios para Meta cada semana y ya estás harto de empezar desde cero.
-            </h3>
-            <ul className="v3-list">
-              {yesItems.map((t) => (
-                <li key={t}>
-                  <span className="v3-list-icon v3-list-icon--green">
-                    <Icon name="check" size={12} color="var(--v3-bg)" stroke={3} />
-                  </span>
-                  <span>{t}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* NO */}
           <div className="v3-forwhom-no">
             <div className="v3-forwhom-no-head">
@@ -329,6 +309,26 @@ function ForWhomBlock() {
               No vendemos humo a 9 €.{' '}
               <strong>Si no es tu momento, preferimos que vuelvas cuando lo sea.</strong>
             </p>
+          </div>
+
+          {/* YES */}
+          <div className="v3-forwhom-yes">
+            <div className="v3-eyebrow">
+              <Sq /> ESTO ES PARA TI SI...
+            </div>
+            <h3 className="v3-forwhom-title">
+              Produces anuncios para Meta cada semana y ya estás harto de empezar desde cero.
+            </h3>
+            <ul className="v3-list">
+              {yesItems.map((t) => (
+                <li key={t}>
+                  <span className="v3-list-icon v3-list-icon--green">
+                    <Icon name="check" size={12} color="var(--v3-bg)" stroke={3} />
+                  </span>
+                  <span>{t}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
