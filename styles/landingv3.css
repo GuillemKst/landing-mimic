@@ -1440,7 +1440,7 @@
 
 /* --- Footer --- */
 .v3-footer {
-  padding: 24px var(--v3-px);
+  padding: 40px var(--v3-px);
   border-top: 1px solid var(--v3-border);
 }
 
@@ -1451,29 +1451,42 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
 }
 
 .v3-footer-links {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 12px;
+  gap: 6px;
+  font-size: 13px;
   color: var(--v3-text-tertiary);
+  font-family: var(--font-body);
+}
+
+.v3-footer-links a {
+  color: var(--v3-text-secondary);
+  text-decoration: none;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+
+.v3-footer-links a:hover {
+  color: var(--v3-accent-bright);
 }
 
 .v3-footer-links button {
   background: none;
   border: none;
   cursor: pointer;
-  color: inherit;
+  color: var(--v3-text-secondary);
   font: inherit;
-  padding: 0;
+  padding: 4px 6px;
   transition: color 0.15s;
 }
 
 .v3-footer-links button:hover {
-  color: var(--v3-text-secondary);
+  color: var(--v3-accent-bright);
 }
 
 /* --- Scroll Animations --- */
