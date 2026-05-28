@@ -522,7 +522,8 @@ function PreviewSceneFrame({
       <div className="hero-scene-inner landing2-preview-inner">
         <div className="hero-mini-sidebar">
           <div className="hero-mini-logo">
-            <Sq size={8} />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo-mimic.png" alt="MIMIC" width={16} height={16} style={{ borderRadius: 3, flexShrink: 0 }} />
             <span>MIMIC</span>
           </div>
           <div className="hero-mini-project">
