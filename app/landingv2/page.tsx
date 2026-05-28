@@ -63,10 +63,10 @@ function useCountUp(target: number, duration = 1800) {
   return { value, ref };
 }
 
-function Sq({ size = 6, color = 'var(--v3-accent)' }: { size?: number; color?: string }) {
+function Sq({ size = 6, color = 'var(--v3-accent)', style }: { size?: number; color?: string; style?: React.CSSProperties }) {
   return (
     <span
-      style={{ width: size, height: size, background: color, display: 'inline-block', flexShrink: 0 }}
+      style={{ width: size, height: size, background: color, display: 'inline-block', flexShrink: 0, ...style }}
       aria-hidden
     />
   );
