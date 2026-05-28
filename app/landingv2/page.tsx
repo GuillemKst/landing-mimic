@@ -107,6 +107,16 @@ function Nav() {
 // ---------------------------------------------------------------------------
 
 function HeroSection() {
+  const [expanded, setExpanded] = useState(false);
+
+  useEffect(() => {
+    if (!expanded) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setExpanded(false); };
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', onKey);
+    return () => { document.body.style.overflow = ''; window.removeEventListener('keydown', onKey); };
+  }, [expanded]);
+
   return (
     <section className="v3-hero">
       <div className="v3-hero-spotlight" />
@@ -143,8 +153,41 @@ function HeroSection() {
 
         <div className="v3-hero-preview" style={{ marginTop: 56 }}>
           <HeroPreview />
+          <button
+            type="button"
+            className="v3-expand-btn"
+            onClick={() => setExpanded(true)}
+            aria-label="Ver en grande"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="15 3 21 3 21 9" />
+              <polyline points="9 21 3 21 3 15" />
+              <line x1="21" y1="3" x2="14" y2="10" />
+              <line x1="3" y1="21" x2="10" y2="14" />
+            </svg>
+            Ver en grande
+          </button>
         </div>
       </div>
+
+      {expanded && (
+        <div className="v3-fullscreen-overlay" onClick={() => setExpanded(false)}>
+          <div className="v3-fullscreen-inner" onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              className="v3-fullscreen-close"
+              onClick={() => setExpanded(false)}
+              aria-label="Cerrar"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+            <HeroPreview />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
