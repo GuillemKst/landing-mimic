@@ -8,11 +8,11 @@ export interface LogoProps {
   href?: string;
 }
 
-const dims: Record<NonNullable<LogoProps['size']>, { square: number; text: number; gap: number }> = {
-  sm: { square: 8,  text: 16, gap: 8  },
-  md: { square: 10, text: 18, gap: 10 },
-  lg: { square: 12, text: 22, gap: 11 },
-  xl: { square: 16, text: 28, gap: 12 },
+const dims: Record<NonNullable<LogoProps['size']>, { icon: number; text: number; gap: number }> = {
+  sm: { icon: 22,  text: 16, gap: 8  },
+  md: { icon: 28, text: 18, gap: 10 },
+  lg: { icon: 34, text: 22, gap: 11 },
+  xl: { icon: 42, text: 28, gap: 12 },
 };
 
 export function Logo({ size = 'md', theme = 'light', href = '/' }: LogoProps) {
@@ -21,9 +21,13 @@ export function Logo({ size = 'md', theme = 'light', href = '/' }: LogoProps) {
 
   const inner = (
     <span style={{ display: 'inline-flex', alignItems: 'center', gap: d.gap }}>
-      <span
-        style={{ width: d.square, height: d.square, background: 'var(--c-green)', flexShrink: 0 }}
-        aria-hidden
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/logo-mimic.png"
+        alt="MIMIC"
+        width={d.icon}
+        height={d.icon}
+        style={{ borderRadius: d.icon * 0.18, flexShrink: 0 }}
       />
       <span
         style={{

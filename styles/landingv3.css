@@ -330,20 +330,30 @@
 }
 .v3-hero-preview .hero-replay-btn {
   position: absolute;
-  bottom: -36px;
+  bottom: -44px;
   right: 0;
-  background: none;
+  left: 0;
+  margin: 0 auto;
+  width: fit-content;
+  background: rgba(16, 190, 134, 0.06);
   border: 1px solid var(--v3-border);
   color: var(--v3-text-secondary);
+  font-family: var(--font-body);
   font-size: 12px;
-  padding: 4px 12px;
-  border-radius: 6px;
+  padding: 6px 18px;
+  border-radius: 999px;
   cursor: pointer;
-  transition: color 150ms, border-color 150ms;
+  opacity: 0;
+  transition: opacity 200ms, color 150ms, border-color 150ms, background 150ms;
+  z-index: 10;
+}
+.v3-hero-preview:hover .hero-replay-btn {
+  opacity: 1;
 }
 .v3-hero-preview .hero-replay-btn:hover {
   color: var(--v3-accent);
   border-color: var(--v3-accent);
+  background: rgba(16, 190, 134, 0.12);
 }
 
 /* Product mockup (legacy) */
