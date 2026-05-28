@@ -275,6 +275,23 @@
   opacity: 0.7;
 }
 
+.v3-hero-highlight {
+  color: var(--v3-accent-bright);
+  position: relative;
+  display: inline-block;
+}
+.v3-hero-highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.04em;
+  height: 0.09em;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--v3-accent), rgba(16, 190, 134, 0.3));
+  box-shadow: 0 0 20px rgba(16, 190, 134, 0.4), 0 0 60px rgba(16, 190, 134, 0.15);
+}
+
 .v3-hero-sub {
   font-size: clamp(16px, 2vw, 19px);
   line-height: 1.65;

@@ -117,9 +117,8 @@ function HeroSection() {
         </div>
 
         <h1>
-          Para de inventar guiones{' '}
-          <span className="v3-hero-strike">desde cero</span>.<br />
-          <span className="v3-accent-text">Créalos desde lo que tu mercado ya validó.</span>
+          Crea anuncios que tu mercado<br />
+          <span className="v3-hero-highlight">ya validó.</span>
         </h1>
 
         <p className="v3-hero-sub">
